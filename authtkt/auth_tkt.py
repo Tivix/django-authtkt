@@ -4,7 +4,9 @@ from codecs import utf_8_encode
 import os, sys
 project = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 paste_dir = '%s%s' % (os.path.dirname(project), '/lib/python2.7/site-packages/paste')
+site_packages_dir = '%s%s' % (os.path.dirname(project), '/lib/python2.7/site-packages')
 sys.path.append(paste_dir)
+sys.path.append(site_packages_dir)
 import time
 
 from paste.request import get_cookies
