@@ -3,7 +3,9 @@ from codecs import utf_8_decode
 from codecs import utf_8_encode
 import os, sys
 project = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-sys.path.append('%s%s' % (os.path.dirname(project), '/lib/python2.7/site-packages/paste'))
+paste_dir = '%s%s' % (os.path.dirname(project), '/lib/python2.7/site-packages/paste')
+import pdb; pdb.set_trace()
+sys.path.append(paste_dir)
 import time
 
 from paste.request import get_cookies
